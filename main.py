@@ -27,7 +27,7 @@ if uploaded_file is not None:
     img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
 
     # Display the uploaded image
-    st.image(img, caption="Uploaded MRI Image", use_column_width=True)
+    st.image(img, caption="Uploaded MRI Image", use_container_width=True)
 
     # Make prediction
     predictions = model.predict(img_array)
